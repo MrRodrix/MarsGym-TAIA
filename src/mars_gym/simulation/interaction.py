@@ -464,7 +464,6 @@ class InteractionTraining(SupervisedModelTraining, metaclass=abc.ABCMeta):
             + 1,
             item_metadata=self.embeddings_for_metadata,
         )
-        self.env.seed(42)
 
         self.agent: BanditAgent = self.create_agent()
 
